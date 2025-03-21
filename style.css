@@ -1,0 +1,179 @@
+/* Общий стиль */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок страницы */
+.header {
+    background-color: #287bf7;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Контейнер для формы добавления */
+.task-container {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+/* Блок добавления новой задачи */
+.new-task {
+    background: white;
+    padding: 15px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.new-task h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.new-task input {
+    padding: 10px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.add-btn {
+    padding: 10px 15px;
+    background-color: #287bf7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #1d5ec7;
+}
+
+/* Контейнер заголовков и задач */
+.task-board {
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+    padding: 20px;
+    align-items: flex-start;
+    margin-left: 40px;
+    
+}
+
+/* Колонки для каждого раздела */
+.task-column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+   
+    
+    
+}
+
+/* Заголовки */
+.section-title {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+/* Фон заголовков + цвет шрифта */
+.backlog-title {
+    background: #e0e0e0;
+    color: #555;
+}
+
+.in-progress-title {
+    background: #d0e5ff;
+    color: #225599;
+}
+
+.done-title {
+    background: #d5f8dc;
+    color: #2d733f;
+}
+
+.trash-title {
+    background: #ffd6d6;
+    color: #a33d3d;
+}
+
+/* Задачи */
+.task {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+    border-left: 8px solid;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    ;
+}
+
+/* Цветные границы задач */
+.task.backlog {
+    border-left-color: #b0b0b0;
+}
+
+.task.in-progress {
+    border-left-color: #6699ff;
+}
+
+.task.done {
+    border-left-color: #60d394;
+}
+
+.task.trash {
+    border-left-color: #ff6666;
+}
+
+/* Контейнер кнопки очистки */
+.clear-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Кнопка Очистить (только под задачами корзины) */
+.clear-btn {
+    background: #ff5e5e;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.clear-btn:hover {
+    background: #d44040;
+}
