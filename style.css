@@ -1,4 +1,4 @@
-/* Общий стиль */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #eef3fc;
@@ -6,8 +6,8 @@ body {
     padding: 0;
 }
 
-/* Заголовок страницы */
-.header {
+
+header {
     background-color: #287bf7;
     color: white;
     padding: 15px;
@@ -17,7 +17,6 @@ body {
     padding-left: 20px;
 }
 
-/* Контейнер для формы добавления */
 .task-container {
     padding-left: 20px;
     margin-bottom: 20px;
@@ -25,7 +24,7 @@ body {
     margin-top: 50px;
 }
 
-/* Блок добавления новой задачи */
+
 .new-task {
     background: white;
     padding: 15px;
@@ -63,7 +62,7 @@ body {
     background-color: #1d5ec7;
 }
 
-/* Контейнер заголовков и задач */
+
 .task-board {
     display: flex;
     justify-content: flex-start;
@@ -74,7 +73,7 @@ body {
     
 }
 
-/* Колонки для каждого раздела */
+
 .task-column {
     width: 300px;
     display: flex;
@@ -86,7 +85,7 @@ body {
     
 }
 
-/* Заголовки */
+
 .section-title {
     padding: 10px;
     font-size: 16px;
@@ -99,7 +98,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Фон заголовков + цвет шрифта */
 .backlog-title {
     background: #e0e0e0;
     color: #555;
@@ -120,7 +118,7 @@ body {
     color: #a33d3d;
 }
 
-/* Задачи */
+
 .task {
     background: white;
     padding: 10px;
@@ -136,7 +134,7 @@ body {
     ;
 }
 
-/* Цветные границы задач */
+
 .task.backlog {
     border-left-color: #b0b0b0;
 }
@@ -153,7 +151,7 @@ body {
     border-left-color: #ff6666;
 }
 
-/* Контейнер кнопки очистки */
+
 .clear-container {
     display: flex;
     justify-content: center;
@@ -161,7 +159,6 @@ body {
     width: 100%;
 }
 
-/* Кнопка Очистить (только под задачами корзины) */
 .clear-btn {
     background: #ff5e5e;
     color: white;

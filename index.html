@@ -1,65 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="ru">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gareeva Elina Damirovna</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Список задач</title>
 </head>
-<body>
-    <div class="container">
-        <h1 class="header">Список задач</h1>
 
-        <!-- Форма для добавления новой задачи -->
-        <div class="task-container">
-            <div class="new-task">
-                <h2>Новая задача</h2>
-                <input id="task-input" type="text" placeholder="Название задачи...">
-                <button class="add-btn">+ Добавить</button>
-            </div>
-        </div>
 
-        <!-- Доска задач -->
-        <div class="task-board">
+<body class="board-app">
 
-            <!-- Бэклог -->
-            <div class="task-column">
-                <div class="section-title backlog-title">Бэклог</div>
-                <div class="task backlog">Выучить JS</div>
-                <div class="task backlog">Выучить React</div>
-                <div class="task backlog">Сделать домашку</div>
-            </div>
 
-            <!-- В процессе -->
-            <div class="task-column">
-                <div class="section-title in-progress-title">В процессе</div>
-                <div class="task in-progress">Выпить смузи</div>
-                <div class="task in-progress">Попить воды</div>
-            </div>
+  <main class="board-app__main">
+    <div class="board-app__inner">
+      <section class="add-task">
 
-            <!-- Готово -->
-            <div class="task-column">
-                <div class="section-title done-title">Готово</div>
-                <div class="task done">Позвонить маме</div>
-                <div class="task done">Погладить кота</div>
-            </div>
 
-            <!-- Корзина -->
-            <div class="task-column">
-                <div class="section-title trash-title">Корзина</div>
-                <div class="task trash">Сходить погулять</div>
-                <div class="task trash">Прочитать "Войну и Мир"</div>
+      </section>
+      <section class="task-board">
 
-                <!-- Кнопка очистки (внизу под последней задачей) -->
-                <div class="clear-container">
-                    <button class="clear-btn">✖ Очистить</button>
-                </div>
-            </div>
 
-        </div>
-
+      </section>
+     
     </div>
-
-    <script src="script.js"></script>
+  </main>
+  <script src="src/main.js" type="module"></script>
 </body>
 </html>
